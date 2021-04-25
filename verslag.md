@@ -1,6 +1,6 @@
 # Morse
 
-## Het verhaal
+## Doel en verhaal
 Wanneer er voldoende energie werd opgewekt bij de vorige puzzel (fitnesstracker), wordt ook meteen duidelijk dat de Russen via morse code belangrijke informatie doorsturen. Deze informatie kan ook gebruikt worden bij de klinische testen van ónze virologen. Deze klinische testen vinden zogezegd plaats in een ruimte naast de escape room. Daarom moeten ze de morse informatie doorgeven, via een fluitje, aan de onderzoekers van de klinische testen.
 
 Wanneer de sequentie juist werd nagefloten, zal er op een display een cijfer verschijnen én een tip voor de volgende proef. Het cijfer kan gebruikt worden bij de Alohomora-puzzel.
@@ -26,6 +26,9 @@ De enable butten en reset button worden voorzien van een pull-up weerstand, net 
 De display maakt gebruik van I2C communicatie. Hiervoor maken we gebruik van de SDA- en SCL-poorten. Via de SDA-poort sturen we data van en naar de display, vanuit de ESP32. Deze 2 poorten zijn active low. Daarom werden pull-up weerstanden voorzien op het display zelf. De pull-up weerstanden moeten dus niet op onze eigen PCB aangesloten worden.
 
 Het centrale element, ESP32, voorzien we, naast de verschillende componenten die nog volgen, ook van een LEDlichtje. Hiermee kunnen we gemakkelijk controleren of het solderen gelukt is.
+<p align="center">
+  <img width="600" height="200" src=https://user-images.githubusercontent.com/78847177/115971593-9707d280-a549-11eb-82d4-021c228c60fe.png>
+</p>
 ![image](https://user-images.githubusercontent.com/78847177/115971593-9707d280-a549-11eb-82d4-021c228c60fe.png)
 
 De micro-USB voorziet een voltage van 5 volt. De andere pinnen worden niet gebruikt. De programmatie van de ESP32 gebeurt namelijk via een pinheader.
