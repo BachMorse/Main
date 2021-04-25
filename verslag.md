@@ -61,3 +61,4 @@ En als laatste zorgt de broker ook voor een start-, pauze- en stopsignaal. Wanne
 
 ## Mogelijke errors
 Mogelijke errors zijn debouncing van de button. Op voorhand hebben we verschillende buttons getest om te zien welke de meeste kans heef top debouncing. We kozen voor de button die weinig tot geen debouncing vertoonde.
+Een andere factor die fout kan veroorzaken is het achtergrondgeluid. Om dit tegen te gaan, werkten we met een button die ingedrukt moet worden tijdens het fluiten. Zo weet de microfoon dat het ontvangen geluid gefluit zal zijn. Als het relatief stil is op de achtergrond, heeft de microfoon geen moeite om achtergrondgeluid te onderscheiden van het gefluit. Enkel wanneer er veel geluid is op de achtergrond, kan het zijn de microfoon foute signalen ontvangt.
