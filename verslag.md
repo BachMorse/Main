@@ -29,17 +29,22 @@ Het centrale element, ESP32, voorzien we, naast de verschillende componenten die
 <p align="center">
   <img src=https://user-images.githubusercontent.com/78847177/115971593-9707d280-a549-11eb-82d4-021c228c60fe.png>
 </p>
-![image](https://user-images.githubusercontent.com/78847177/115971593-9707d280-a549-11eb-82d4-021c228c60fe.png)
 
 De micro-USB voorziet een voltage van 5 volt. De andere pinnen worden niet gebruikt. De programmatie van de ESP32 gebeurt namelijk via een pinheader.
-![image](https://user-images.githubusercontent.com/78847177/115971624-c9b1cb00-a549-11eb-8010-be407baed09c.png)
+<p align="center">
+  <img src=https://user-images.githubusercontent.com/78847177/115971624-c9b1cb00-a549-11eb-8010-be407baed09c.png>
+</p>
 
 De level shifters verhogen de voltage van 3.3 volt, afkomstig van de ESP32 naar 5 volt.
-![image](https://user-images.githubusercontent.com/78847177/115971693-2e6d2580-a54a-11eb-963d-52924a602175.png)
+<p align="center">
+  <img src=https://user-images.githubusercontent.com/78847177/115971693-2e6d2580-a54a-11eb-963d-52924a602175.png>
+</p>
+
 
 De verschillende pin headers zorgen voor de aansluiting van de externe componenten. We gebruiken mannetjes zodat de pinnen niet kunnen plooien als de PCB verplaatst wordt.
-![image](https://user-images.githubusercontent.com/78847177/115971717-62e0e180-a54a-11eb-96f8-1c58a65d20aa.png)
-
+<p align="center">
+  <img src=https://user-images.githubusercontent.com/78847177/115971717-62e0e180-a54a-11eb-96f8-1c58a65d20aa.png>
+</p>
 
 ## Software
 ### Speaker
