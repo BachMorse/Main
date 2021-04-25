@@ -1,6 +1,6 @@
-#Morse
+# Morse
 
-##Het verhaal
+## Het verhaal
 Wanneer er voldoende energie werd opgewekt bij de vorige puzzel (fitnesstracker), wordt ook meteen duidelijk dat de Russen via morse code belangrijke informatie doorsturen. Deze informatie kan ook gebruikt worden bij de klinische testen van ónze virologen. Deze klinische testen vinden zogezegd plaats in een ruimte naast de escape room. Daarom moeten ze de morse informatie doorgeven, via een fluitje, aan de onderzoekers van de klinische testen.
 
 Wanneer de sequentie juist werd nagefloten, zal er op een display een cijfer verschijnen én een tip voor de volgende proef. Het cijfer kan gebruikt worden bij de Alohomora-puzzel.
@@ -9,14 +9,14 @@ De bedoeling van onze puzzel is om een uitgezonden morse code na te fluiten aan 
 
 Om aan de spelers te laten weten wat er juist moet gebeuren met het fluitje zal er een blad naast de micro liggen waarop, deels in morse, de uitleg staat.
 
-##Blokschema
+## Blokschema
 
 
 
-##Hardware
-###Speaker
+## Hardware
+### Speaker
 
-###Micro
+### Micro
 Op de PCB-plaat voorzien we een aansluiting voor een externe display, een externe microfoon en een externe button. Deze 3 elementen worden via pinheaders aangesloten. Om de ESP te programmeren, wordt een extra pinheader voorzien. Aangezien de ESP32 maar 1 keer geprogrammeerd moet worden, is dit de meest efficiënte manier. 
 
 De ESP32 zal gevoed worden met een powerbank van 5V. Deze 5V is nodig om de display aan te sturen. Via de LDO zal 5V omgezet worden naar 3.3V. De program header, de microfoon en de ESP32 worden aangesloten aan de 3.3V.
@@ -38,11 +38,11 @@ De verschillende pin headers zorgen voor de aansluiting van de externe component
 ![image](https://user-images.githubusercontent.com/78847177/115971717-62e0e180-a54a-11eb-96f8-1c58a65d20aa.png)
 
 
-##Software
-###Speaker
-###Micro
+## Software
+### Speaker
+### Micro
 
-##Communicatie
+## Communicatie
 Eerst en vooral moet er gecommuniceerd worden met de vorige puzzel, de fitnesstracker, en met de volgende puzzel, 5G-proef. Wanneer de opdracht van de fitnesstracker werd volbracht, mag de speaker beginnen met het uitzenden van de morse code.
 Wanneer de spelers klaar zijn met onze proef, zal er een start signaal gegeven worden naar de afstandsbediening van de 5G-proef.
 
@@ -51,5 +51,5 @@ Daarnaast wordt over de broker ook de juiste morse-sequentie doorgegeven door de
 En als laatste zorgt de broker ook voor een start-, pauze- en stopsignaal. Wanneer we een pauzesignaal ontvangen, zal de button van de microfoon niet werken, de speaker zal stoppen met geluid uitzenden.
 
 
-##Mogelijke errors
+## Mogelijke errors
 Mogelijke errors zijn debouncing van de button. Op voorhand hebben we verschillende buttons getest om te zien welke de meeste kans heef top debouncing. We kozen voor de button die weinig tot geen debouncing vertoonde.
