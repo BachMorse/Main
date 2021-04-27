@@ -21,3 +21,7 @@ Wat kan getest worden:
 ## Mogelijke problemen
 Mogelijke problemen zijn het achtergrondgeluid dat de sequentie verstoord.
 Het kan ook zijn dat de sequentie te lang wordt en dat het onmogelijk blijkt om deze te onthouden/door te zeggen.
+
+# Testing
+
+# Feedback
