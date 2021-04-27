@@ -11,12 +11,12 @@ Van het zoeken naar de telefoon tot de tip die ze ontvangen wanneer de juiste se
 
 ## Scope
 Wat kan getest worden:
-\begin{itemize}
-    \item Juiste sequentie fluiten
-    \item Foute sequentie fluiten (er zal geen tip verschijnen)
-    \item Button indrukken en weer loslaten (al het vorige wordt gewist)
-    \item Signalen doorsturen via broker
-\end{itemize}
+
+    - Juiste sequentie fluiten
+    - Foute sequentie fluiten (er zal geen tip verschijnen)
+    - Button indrukken en weer loslaten (al het vorige wordt gewist)
+    - Signalen doorsturen via broker
+
 
 ## Mogelijke problemen
 Mogelijke problemen zijn het achtergrondgeluid dat de sequentie verstoord.
