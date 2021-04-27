@@ -15,12 +15,13 @@ Wat kan getest worden:
     - Juiste sequentie fluiten
     - Foute sequentie fluiten (er zal geen tip verschijnen)
     - Button indrukken en weer loslaten (al het vorige wordt gewist)
-    - Signalen doorsturen via broker
+    - Signalen doorsturen via broker (tot nu toe nog niet helemaal on point)
 
 
 ## Mogelijke problemen
 Mogelijke problemen zijn het achtergrondgeluid dat de sequentie verstoord.
 Het kan ook zijn dat de sequentie te lang wordt en dat het onmogelijk blijkt om deze te onthouden/door te zeggen.
+Connectie van de MQTT is ook nog niet volledig in orde, waardoor het nog niet mogelijk is om te communiceren tussen micro en speaker.
 
 # Testing
 
