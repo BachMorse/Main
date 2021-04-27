@@ -52,9 +52,11 @@ De verschillende pin headers zorgen voor de aansluiting van de externe component
 
 ## Communicatie
 Eerst en vooral moet er gecommuniceerd worden met de vorige puzzel, de fitnesstracker, en met de volgende puzzel, 5G-proef. Wanneer de opdracht van de fitnesstracker werd volbracht, mag de speaker beginnen met het uitzenden van de morse code.
-Wanneer de spelers klaar zijn met onze proef, zal er een start signaal gegeven worden naar de afstandsbediening van de 5G-proef.
+Via het kanaal "esp32/fitness/telefoon" wordt het signaal "BEL" gestuurd. Zo weet de speaker dat het geluid mag beginnen spelen.
 
-Daarnaast wordt over de broker ook de juiste morse-sequentie doorgegeven door de speaker aan de microfoon. Hierdoor weet de microfoon met welke sequentie het ontvangen fluitsignaal moet vergeleken worden.
+Wanneer de spelers klaar zijn met onze proef, zal er een start signaal gegeven worden naar de afstandsbediening van de 5G-proef. Hiervoor wordt het "morse_einde" doorgestuurd via het kanaal "esp32/morse/output".
+
+Daarnaast wordt over de broker ook de juiste morse-sequentie doorgegeven door de speaker aan de microfoon. Hierdoor weet de microfoon met welke sequentie het ontvangen fluitsignaal moet vergeleken worden. Het kanaal waarover we hiervoor communiceren is "esp32/morse/intern".
 
 En als laatste zorgt de broker ook voor een start-, pauze- en stopsignaal. Wanneer we een pauzesignaal ontvangen, zal de button van de microfoon niet werken, de speaker zal stoppen met geluid uitzenden.
 
