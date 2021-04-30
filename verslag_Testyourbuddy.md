@@ -22,11 +22,7 @@ Wat kan getest worden:
     - Button indrukken en weer loslaten (al het vorige wordt gewist)
     - Signalen doorsturen via broker (tot nu toe nog niet helemaal on point)
     
-    Omdat de MQTT nog niet op punt staat, kan de combinatie van de speaker en de micro niet volledig getest worden.
-    
-    Wat we wel graag zouden willen weten is of de lengte van de sequentie uit de speaker niet te lang/te kort is. Om dit te testen kan de puzzel worden uitgevoerd alsof de MQTT werkt, er zal geen tip verschijnen als de sequentie juist.
-    
-    De gefloten sequentie kan wel gecontroleerd worden adhv de letters die op Jeff zijn computerscherm verschijnen én de vertaling via de morse op het A4-papier.
+Omdat de MQTT nog niet op punt staat, kan de combinatie van de speaker en de micro niet volledig getest worden. Wat we wel graag zouden willen weten is of de lengte van de sequentie uit de speaker niet te lang/te kort is. Om dit te testen kan de puzzel worden uitgevoerd alsof de MQTT werkt, er zal geen tip verschijnen als de sequentie juist. De gefloten sequentie kan wel gecontroleerd worden adhv de letters die op Jeff zijn computerscherm verschijnen én de vertaling via de morse op het A4-papier.
 
 
 ## Mogelijke problemen
