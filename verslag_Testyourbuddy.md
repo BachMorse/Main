@@ -7,15 +7,14 @@ De speaker hangt vast, er kan dus niet rondgelopen worden met de telefoon. De mi
 
 De speler(s) zullen eerst goed moeten luisteren naar de telefoon, waaruit de sequentie wordt verstuurd. Daarna zullen ze deze sequentie moeten nafluiten. Het is dus de bedoeling dat de 2 spelers goed communiceren, óf dat 1 speler de sequentie onthoudt.
 
-Wanneer de juiste sequentie werd nagefloten verschijnt er een cijfer voor de Alohomora, en een tip voor de volgende tip (bijvoorbeeld de plaats waar de afstandsbediening ligt).
+Wanneer de juiste sequentie werd nagefloten verschijnt er een cijfer voor de Alohomora, en een tip voor de volgende puzzel (bijvoorbeeld de plaats waar de afstandsbediening ligt).
 
-Idealiter luistert er 1 iemand naar de telefoon, en kan deze persoon de sequentie nazeggen. 
+Idealiter luistert er 1 iemand naar de telefoon, en kan deze persoon de sequentie nazeggen. De andere persoon kan fluiten.
 
 Van het zoeken naar de telefoon tot de tip die ze ontvangen wanneer de juiste sequentie werd nagedaan, rekenen we 10 minuten.
 
 ## Scope
 Wat kan getest worden:
-
 
     - Juiste sequentie fluiten
     - Foute sequentie fluiten (er zal geen tip verschijnen)
@@ -35,12 +34,11 @@ De puzzel werd 3 keer getest op de volgende onderdelen:
     - nafluiten van het morse signaal (microfoon)
     - responsie van de display
 
-Volgende feedback werd gegeven bij het testen van deze bovenstaande onderdelen:
+## Feedback
+Er traden geen errors op, er werden enkel extra mogelijkheden/verbeteringen aangehaald. Volgende feedback werd gegeven bij het testen van deze bovenstaande onderdelen:
 
-Bij het fluiten van de morse sequentie is het moeilijk om korte tonen te fluiten. De duur van een kort en lang een lang signaal is soms moeilijk te onderscheiden. Daarnaast werd een visuele indicatie aangeraden wanneer een foute code werd nagefloten.
+Bij het fluiten van de morse sequentie is het moeilijk om korte tonen te fluiten. De duur van een kort en een lang signaal is soms moeilijk te onderscheiden. Daarnaast werd een visuele indicatie aangeraden wanneer een foute code werd nagefloten.
 
 Wanneer de speaker de morse sequentie afspeelt is de tijd tussen elk beep signaal zeer kort wat het ontcijferen/nafluiten van de code wat moeilijk maakt. De deelnemers geven wel aan dat het haalbaar is wanneer de code opgeschreven kan worden. Indien dit niet toegestaan zou zijn (puur op gehoor) is het beter om dit tijdsinterval iets langer te maken.
 
-Er is een kleine manier om de puzzel te omzeilen, namelijk door de speaker los te maken en dichtbij de speaker te houden. 
-
-# Feedback
+Er is een kleine manier om de puzzel te omzeilen, namelijk door de speaker los te maken en dichtbij de speaker te houden.
