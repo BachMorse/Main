@@ -48,7 +48,7 @@ De verschillende pin headers zorgen voor de aansluiting van de externe component
 
 De verschillende externe componenten zijn de display. ... Daarnaast maken we ook gebruik van een button, deze button is niet enorm stabiel, het debounced bij het indrukken en loslaten. Voor deze puzzel is het geen stoorfactor, de button is namelijk snel genoeg stabiel om zijn functie te kunnen uitvoeren. Als derde externe component maken we, uiteraard, gebruik van een micro. Deze microfoon heeft een potentiometer die we kunnen aanpassen naar de gewenste gevoeligheid.
 
-De [uiteindelijke printplaat](Micro_PCB) ziet eruit als volgt:
+De [uiteindelijke printplaat](https://github.com/BachMorse/Micro_PCB) ziet eruit als volgt:
 <p align="center">
   <img src=https://user-images.githubusercontent.com/78847177/116796141-7e179800-aada-11eb-9f48-b499f2575616.png)
 </p>
