@@ -48,9 +48,9 @@ De verschillende pin headers zorgen voor de aansluiting van de externe component
 
 De verschillende externe componenten zijn de display. ... Daarnaast maken we ook gebruik van een button, deze button is niet enorm stabiel, het debounced bij het indrukken en loslaten. Voor deze puzzel is het geen stoorfactor, de button is namelijk snel genoeg stabiel om zijn functie te kunnen uitvoeren. Als derde externe component maken we, uiteraard, gebruik van een micro. Deze microfoon heeft een potentiometer die we kunnen aanpassen naar de gewenste gevoeligheid.
 
-De uiteindelijke printplaat ziet eruit als volgt:
+De [uiteindelijke printplaat](microfoon.pro) ziet eruit als volgt:
 <p align="center">
-![image](https://user-images.githubusercontent.com/78847177/116796141-7e179800-aada-11eb-9f48-b499f2575616.png)
+  <img src=https://user-images.githubusercontent.com/78847177/116796141-7e179800-aada-11eb-9f48-b499f2575616.png)
 </p>
 
 Voor de duidelijkheid laten we het grondvlak even achterwege. Zoals te zien plaaststen we de ontladingscondensatoren zo dicht mogelijk bij de ESP32.
@@ -63,7 +63,7 @@ Bij de micro maken we gebruik van de waarde 4095. Dit is de maximum waarde die d
 Omdat we de som nemen, zal er bij een lang signaal eerst een kort signaal gedetecteerd worden. Ook kan het zijn dat een kort signaal van de speler iets langer duurt dan het opgegeven kort signaal, zonder controlevoorwaarde, worden er dan meerdere korte signalen gedetecteerd. Om dit te vermijden voerden we een controlevoorwaarde in. Ook de stiltes moeten dan gedetecteerd worden om 2 korte signalen na elkaar mogelijk te maken.
 
 <p align="center">
-![image](https://user-images.githubusercontent.com/78847177/116791979-47cc1f80-aabe-11eb-94c7-dcd034fb1ed0.png)
+  <img src=https://user-images.githubusercontent.com/78847177/116791979-47cc1f80-aabe-11eb-94c7-dcd034fb1ed0.png>
 </p>
 
 ## Communicatie
