@@ -3,7 +3,7 @@
 ## Doel en verhaal
 Wanneer er voldoende energie werd opgewekt bij de vorige puzzel (fitnesstracker), wordt ook meteen duidelijk dat de Russen via morse code belangrijke informatie doorsturen. Deze informatie kan ook gebruikt worden bij de klinische testen van ónze virologen. Deze klinische testen vinden zogezegd plaats in een ruimte naast de escape room. Daarom moeten ze de morse informatie doorgeven, via een fluitje, aan de onderzoekers van de klinische testen.
 
-Wanneer de sequentie juist werd nagefloten, zal er op een display een cijfer verschijnen én een tip voor de volgende proef. Het cijfer kan gebruikt worden bij de Alohomora-puzzel.
+De morse sequentie komt uit de speaker. Wanneer de sequentie juist werd nagefloten, zal er op een display een cijfer verschijnen én een tip voor de volgende proef. Het cijfer kan gebruikt worden bij de Alohomora-puzzel.
 
 De bedoeling van onze puzzel is om een uitgezonden morse code na te fluiten aan de andere kant van de kamer. Een microfoonsensor zal dit geluid opvangen en het zal nagaan of het nagebootste gefluit overeenkomt met het uitgezonden ritme. Om een morse code uit te zenden maken we gebruik van een speaker. Deze speaker is geïmplementeerd in een telefoon.
 
@@ -48,11 +48,20 @@ De verschillende pin headers zorgen voor de aansluiting van de externe component
 
 De verschillende externe componenten zijn de display. ... Daarnaast maken we ook gebruik van een button, deze button is niet enorm stabiel, het debounced bij het indrukken en loslaten. Voor deze puzzel is het geen stoorfactor, de button is namelijk snel genoeg stabiel om zijn functie te kunnen uitvoeren. Als derde externe component maken we, uiteraard, gebruik van een micro. Deze microfoon heeft een potentiometer die we kunnen aanpassen naar de gewenste gevoeligheid.
 
+De uiteindelijke printplaat ziet eruit als volgt:
+<p align="center">
+![image](https://user-images.githubusercontent.com/78847177/116796141-7e179800-aada-11eb-9f48-b499f2575616.png)
+</p>
+
+Voor de duidelijkheid laten we het grondvlak even achterwege. Zoals te zien plaaststen we de ontladingscondensatoren zo dicht mogelijk bij de ESP32.
+
+
 ## Software
 ### Speaker
 ### Micro
 Bij de micro maken we gebruik van de waarde 4095. Dit is de maximum waarde die de microfoon kan doorsturen wanneer het een luid signaal detecteert. Het komt overeen met 3.3V en het is een 12bit-signaal. Er wordt gekeken naar de som van de vorige 100 samples, wanneer deze een bepaalde grens overschrijdt, zal de code dit zien als een kort/lang signaal. De detectie van een kort of een lang signaal wordt toegevoegd aan een andere array. 
 Omdat we de som nemen, zal er bij een lang signaal eerst een kort signaal gedetecteerd worden. Ook kan het zijn dat een kort signaal van de speler iets langer duurt dan het opgegeven kort signaal, zonder controlevoorwaarde, worden er dan meerdere korte signalen gedetecteerd. Om dit te vermijden voerden we een controlevoorwaarde in. Ook de stiltes moeten dan gedetecteerd worden om 2 korte signalen na elkaar mogelijk te maken.
+
 <p align="center">
 ![image](https://user-images.githubusercontent.com/78847177/116791979-47cc1f80-aabe-11eb-94c7-dcd034fb1ed0.png)
 </p>
@@ -67,7 +76,11 @@ Daarnaast wordt over de broker ook de juiste morse-sequentie doorgegeven door de
 
 En als laatste zorgt de broker ook voor een start-, pauze- en stopsignaal. Wanneer we een pauzesignaal ontvangen, zal de button van de microfoon niet werken, de speaker zal stoppen met geluid uitzenden.
 
+## Opstelling
+De speaker wordt geïmplementeerd in een telefoontoestel. Voor de microfoon maakten we gebruik van de lasercutter. In deze behuizing voorzien we plaats voor de button, de display en de microfoon. Voor de 5V voeding van beide delen, is een powerbank nodig.
+De plaats is niet echt van belang, aangezien het kleine beweegbare componenten zijn.
 
 ## Mogelijke errors
-Mogelijke errors zijn debouncing van de button. Op voorhand hebben we verschillende buttons getest om te zien welke de meeste kans heef top debouncing. We kozen voor de button die weinig tot geen debouncing vertoonde.
+Mogelijke errors zijn debouncing van de button. In principe is dit geen probleem als de speler niet al te snel na het indrukken begint te fluiten.
+
 Een andere factor die fout kan veroorzaken is het achtergrondgeluid. Om dit tegen te gaan, werkten we met een button die ingedrukt moet worden tijdens het fluiten. Zo weet de microfoon dat het ontvangen geluid gefluit zal zijn. Als het relatief stil is op de achtergrond, heeft de microfoon geen moeite om achtergrondgeluid te onderscheiden van het gefluit. Enkel wanneer er veel geluid is op de achtergrond, kan het zijn de microfoon foute signalen ontvangt.
